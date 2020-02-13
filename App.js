@@ -1,9 +1,11 @@
 import React from 'react';
-import { createAppContainer } from 'react-navigation';
+import {NavigationContainer} from '@react-navigation/native';
 import Travel from './navigation/Travel';
 
-const AppContainer = createAppContainer(Travel);
-
-const App = () => <AppContainer />
+const App = () => (
+  <NavigationContainer>
+    <Travel />
+  </NavigationContainer>
+);
 
 export default App;
